@@ -7,10 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45998B2A1C1033840024268E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45998B291C1033840024268E /* main.cpp */; };
+		45998B481C1033E50024268E /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45998B3B1C1033DC0024268E /* gtest.framework */; };
 		45EF57061C102DDD00420B61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EF57051C102DDD00420B61 /* main.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		45998B3A1C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		45998B3C1C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		45998B3E1C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		45998B401C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		45998B421C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		45998B441C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		45998B461C1033DC0024268E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		45998B251C1033830024268E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		45EF57001C102DDD00420B61 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +86,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45998B271C1033830024268E /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		45998B291C1033840024268E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45998B2E1C1033DC0024268E /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = "../../../../../../Downloads/googletest-master/googletest/xcode/gtest.xcodeproj"; sourceTree = "<group>"; };
 		45EF57021C102DDD00420B61 /* GoGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GoGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EF57051C102DDD00420B61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		45998B241C1033830024268E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45998B481C1033E50024268E /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45EF56FF1C102DDD00420B61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +112,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45998B281C1033840024268E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				45998B291C1033840024268E /* main.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		45998B2F1C1033DC0024268E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45998B3B1C1033DC0024268E /* gtest.framework */,
+				45998B3D1C1033DC0024268E /* libgtest.a */,
+				45998B3F1C1033DC0024268E /* libgtest_main.a */,
+				45998B411C1033DC0024268E /* gtest_unittest-framework */,
+				45998B431C1033DC0024268E /* gtest_unittest */,
+				45998B451C1033DC0024268E /* sample1_unittest-framework */,
+				45998B471C1033DC0024268E /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		45EF56F91C102DDD00420B61 = {
 			isa = PBXGroup;
 			children = (
+				45998B2E1C1033DC0024268E /* gtest.xcodeproj */,
 				45EF57041C102DDD00420B61 /* GoGame */,
+				45998B281C1033840024268E /* Tests */,
 				45EF57031C102DDD00420B61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				45EF57021C102DDD00420B61 /* GoGame */,
+				45998B271C1033830024268E /* Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +164,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		45998B261C1033830024268E /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45998B2D1C1033840024268E /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				45998B231C1033830024268E /* Sources */,
+				45998B241C1033830024268E /* Frameworks */,
+				45998B251C1033830024268E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 45998B271C1033830024268E /* Tests */;
+			productType = "com.apple.product-type.tool";
+		};
 		45EF57011C102DDD00420B61 /* GoGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45EF57091C102DDD00420B61 /* Build configuration list for PBXNativeTarget "GoGame" */;
@@ -91,6 +207,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Centrale;
 				TargetAttributes = {
+					45998B261C1033830024268E = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					45EF57011C102DDD00420B61 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -106,14 +225,81 @@
 			mainGroup = 45EF56F91C102DDD00420B61;
 			productRefGroup = 45EF57031C102DDD00420B61 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 45998B2F1C1033DC0024268E /* Products */;
+					ProjectRef = 45998B2E1C1033DC0024268E /* gtest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				45EF57011C102DDD00420B61 /* GoGame */,
+				45998B261C1033830024268E /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		45998B3B1C1033DC0024268E /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = 45998B3A1C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B3D1C1033DC0024268E /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 45998B3C1C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B3F1C1033DC0024268E /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 45998B3E1C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B411C1033DC0024268E /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = 45998B401C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B431C1033DC0024268E /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = 45998B421C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B451C1033DC0024268E /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = 45998B441C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45998B471C1033DC0024268E /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = 45998B461C1033DC0024268E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
+		45998B231C1033830024268E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45998B2A1C1033840024268E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45EF56FE1C102DDD00420B61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +311,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		45998B2B1C1033840024268E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45998B2C1C1033840024268E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		45EF57071C102DDD00420B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -221,6 +421,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		45998B2D1C1033840024268E /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45998B2B1C1033840024268E /* Debug */,
+				45998B2C1C1033840024268E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		45EF56FD1C102DDD00420B61 /* Build configuration list for PBXProject "GoGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -237,6 +445,7 @@
 				45EF570B1C102DDD00420B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
